@@ -185,12 +185,14 @@ ul {
 }
 
 .rigth-rf-1 {
-  background-color: red;
+  background: linear-gradient(to right, #22c4e0, rgb(32, 218, 131));
   border-radius: 20px 20px 0 0;
+  align-items: center;
+  text-align: center;
 }
 
 .rigth-rf-2 {
-  background-color: blue;
+  background-color: white;
   border-radius: 0 0 20px 20px;
     display: inline-block;
   position: relative;
