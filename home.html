@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="navbar-item-1">
+                <img src="logo.png" alt="Logo Investimento & Cia" class="logo">
+                <a>Investimentos & Cia</a>
+            </div>
+            <div class="navbar-item">
+                <a href="home.html">Home</a>
+            </div>
+            <div class="navbar-item">
+                <a href="renda_fixa.html">Renda Fixa</a>
+            </div>
+            <div class="navbar-item">
+                <a href="renda_variavel.html">Renda Variavel</a>
+            </div>
+            <div class="navbar-item">
+                <a href="bolsas_valores.html">Bolsas de Valores</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="parte-1">
+            <div class="parte-1-1">
+                <h1>Invista com consciência</h1>
+                <h3>aprenda o básico de forma simples</h3>
+            </div>
+            <div class="parte-1-2">
+                <img src="grafico.png" alt="">
+            </div>
+        </div>
+        <div class="parte-2">
+            <h3>Tipos de Renda fixa</h3>
+            <div id="container-1">
+                <div class="card">
+                    <h2 class="title">LCI/LCA</h2>
+                    <p class="texto">LCI (Imobiliário) e LCA (Agronegócio) captam recursos para seus respectivos
+                        setores. São muito procurados por serem isentos de Imposto de Renda (para pessoa física) e
+                        protegidos pelo FGC.
+                    </p>
+                    <button class="btn">Ver Conteudo</button>
+                </div>
+                <div class="card">
+                    <h2 class="title">Tesouro Direto</h2>
+                    <p class="texto">Empréstimo direto ao Governo Federal. Considerado o investimento mais seguro do
+                        país. Ideal para reserva de emergência (Tesouro Selic) ou planejamento de longo prazo.
+                    </p>
+                    <button class="btn">Ver Conteudo</button>
+                </div>
+                <div class="card">
+                    <h2 class="title">CDB</h2>
+                    <p class="texto">Título de dívida emitido por bancos. Ao investir, você empresta dinheiro à
+                        instituição e recebe juros. É protegido pelo FGC (até R$ 250 mil) e geralmente tem rentabilidade
+                        atrelada ao CDI.
+                    </p>
+                    <button class="btn">Ver Conteudo</button>
+                </div>
+            </div>
+            <div class="parte-3">
+                <h3>Tipos de Renda Variaveis</h3>
+                <div id="container-1">
+                    <div class="card">
+                        <h2 class="title">Ações</h2>
+                        <p class="texto">Representam a menor fatia do capital social de uma empresa. Ao comprar, você se
+                            torna sócio e pode lucrar com a valorização do preço (ganho de capital) ou com a
+                            distribuição de lucros (dividendos).
+                        </p>
+                        <button class="btn">Ver Conteudo</button>
+                    </div>
+                    <div class="card">
+                        <h2 class="title">Fundos Imobiliários</h2>
+                        <p class="texto">Fundos que investem majoritariamente em ativos imobiliários (prédios,
+                            shoppings, títulos). O principal atrativo é o recebimento de rendimentos mensais, geralmente
+                            isentos de Imposto de Renda.
+                        </p>
+                        <button class="btn">Ver Conteudo</button>
+                    </div>
+                    <div class="card">
+                        <h2 class="title">Fundos de Índice</h2>
+                        <p class="texto">Sigla para Exchange Traded Funds. São fundos que replicam a composição de um
+                            índice (Ex: Ibovespa, S&P 500). São negociados em bolsa como se fossem uma única ação,
+                            oferecendo diversificação de forma simples.
+                        </p>
+                        <button class="btn">Ver Conteudo</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="grafico">
+                <h2>Cotação do Bitcoin (Dados - 2025)</h2>
+                <div>
+                    <canvas id="linechart" height="100"></canvas>
+                </div>
+            </div>
+        </div>
+</body>
+<script>
+    const ctx = document.getElementById('linechart');
+    console.log(ctx)
+    let linechart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Jan/25', 'Fev/25', 'Mar/24', 'Abri/24', 'Mai/25', 'Jun/25', 'Jul/25', 'Ago/25', 'Set/25', 'Out/25', 'Nov/25'],
+            datasets: [{
+                label: 'BitCoin',
+                fill: false,
+                lineTension: 0.1,
+                backgroundColor: "rgba(75, 192,192,0.8)",
+                borderColor: "rgba(75, 192,192,1)",
+                BorderCapStyle: 'butt',
+                BorderDash: [],
+                BorderDashOffset: 0.0,
+                BorderJoinStyle: 'miter',
+                pointBorderColor: "rgba(75, 192,192,1)",
+                pointBackgroundColor: "#fff",
+                pointBorderWidth: 1,
+                pointHoverRadius: 5,
+                pointHoverBackgroundColor: "rgba(75, 192,192,1)",
+                pointHoverBorderColor: "rgba(75, 192,192,1)",
+                pointHoverBorderWidth: 2,
+                pointRadius: 1,
+                pointHitRadius: 10,
+                data: [635982.60, 545187.72, 469224.44, 506102.59, 584997.11, 576862.85, 659878.82, 631845.22, 622760.71, 580429.17, 558731.25],
+            }
+            ]
+        }
+    });
+</script>
+
+<footer class="footer">
+    <div class="footer-left">
+        <ul>
+            <ol>Cléo R. Rodrigues</ol>
+            <ol>Projeto Desenvolvimento Front-End</ol>
+            <ol>IENH - 2025</ol>
+        </ul>
+    </div>
+    <div class="footer-rigth">
+    </div>
+</footer>
+</html>

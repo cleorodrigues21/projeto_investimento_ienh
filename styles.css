@@ -1,0 +1,249 @@
+body {
+  background-color: #F5F5F7;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #F5F5F7;
+}
+
+h1,
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #0A2A47;
+}
+
+#linechart {
+  margin: 20px;
+}
+
+.grafico {
+  text-align: center;
+}
+
+.navbar {
+  background-color: #0a2a47;
+  color: white;
+  width: 100%;
+  height: 50px;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  align-items: center;
+}
+
+.navbar-item {
+  width: 50%;
+  text-align: center;
+}
+
+.navbar-item:hover {
+  background-color: #0f385e;
+  height: 50px;
+}
+
+.navbar-item-1 {
+  width: 100%;
+  padding-inline: 20px;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  padding-right: 10px;
+}
+
+.footer {
+  background-color: #0A2A47;
+  color: white;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+}
+
+.footer-left {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-rigth {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  display: flex;
+  padding: 20px;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.parte-1 {
+  background: linear-gradient(to right, #0cbedd, #abf0fc);
+  width: 100%;
+  color: #0A2A47;
+  font-weight: bold;
+  font-family: 'Helvetica';
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.parte-1-1 {
+  width: 60%;
+  padding-inline: 100px;
+}
+
+.parte-1-2 {
+  width: 40%;
+}
+
+.parte-1-2 img {
+  width: 350px;
+  height: 300px;
+  padding: 40px;
+}
+
+.parte-2 {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(236, 234, 234);
+  text-align: center;
+}
+
+.parte-3 {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(141, 238, 255);
+  text-align: center;
+}
+
+#container-1 {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+}
+
+.card {
+  width: 100%;
+  height: 200px;
+  border-radius: 30px;
+  background-color: white;
+  text-align: center;
+  margin: 10px;
+}
+
+.card .title,
+.btn {
+  font-size: 20px;
+  color: #0A2A47;
+}
+
+.card .texto {
+  padding-inline: 20px;
+}
+
+.card .btn {
+  background: linear-gradient(to right, #0cbedd, rgb(32, 218, 88));
+  border-radius: 50px;
+  border: none;
+  width: 50%;
+  padding: 5px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.bolsa {
+  margin: 20px;
+}
+
+.tipo-container {
+  background-color: white;
+  border-radius: 40px;
+  margin-left: 60px;
+  width: 800px;
+  padding: 20px;
+}
+
+.cotainer-rigth-rf {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  border-radius: 30px;
+}
+
+.rigth-rf-1 {
+  background-color: red;
+  border-radius: 20px 20px 0 0;
+}
+
+.rigth-rf-2 {
+  background-color: blue;
+  border-radius: 0 0 20px 20px;
+    display: inline-block;
+  position: relative;
+}
+
+#liquidez {
+  display: none;
+}
+
+
+.link-container .liq, .rent, .fgc{
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.link-container #liquidez{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.link-container #rentabilidade{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.link-container #fgc{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: lightblue;
+  padding: 10px;
+}
+
+ .liq:hover #liquidez{
+  display: block;
+}
+.rent:hover #rentabilidade{
+  display: block;
+}
+ .fgc:hover #fgc{
+  display: block;
+}
+@media (min-width: 600px) {
+    
+}
